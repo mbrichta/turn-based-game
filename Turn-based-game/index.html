@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="title">
+            <h1>Turn-based Game</h1>
+        </div>
+
+        <div class="game-settings" id='GameSettings'>
+            <form>
+                <div>
+                    Player One:
+                    <input type="text" placeholder="Name" id='playerOne'>
+                </div>
+                <div>
+                    Player Two:
+                    <input type="text" placeholder="Name" id='playerTwo'>
+                </div>
+                <p>Select map Size:</p>
+                <select id="MapSize">
+                    <option value="8">Small</option>
+                    <option value="12">Medium</option>
+                    <option value="16">Large</option>
+                </select>
+                <input class="btn btn-primary" id="submit" type="button" value="Start Game">
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div id="board" class="board"></div>
+            </div>
+            <div class="col-sm-4">
+                <div id="console" class="console d-flex flex-column justify-content-between">
+                    <div id="player1-card" class="card">
+                        <div id="player1-header" class="card-header">
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li id="player1-health" class="list-group-item"></li>
+                            <li id="player1-weapon" class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                    <div id="player2-card" class="card">
+                        <div id="player2-header" class="card-header">
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li id="player2-health" class="list-group-item"></li>
+                            <li id="player2-weapon" class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="endGame" id="endGame">
+            <input class="newGame" id="newGame" type="button" value="New Game">
+            <input class="playAgain" id="playAgain" type="button" value="Play Again">
+        </div>
+    </div>
+</body>
+<script src="newScript.js"></script>
+
+</html>

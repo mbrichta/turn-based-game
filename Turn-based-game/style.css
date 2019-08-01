@@ -1,0 +1,59 @@
+.container {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+.board {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+}
+.player {
+    display: flex; 
+    background-image: url(assets/Minotaur\ -\ Sprite\ Sheet.png);
+}
+.weapon {
+    display: flex;
+    background-color: red;
+}
+.trees {
+    display: flex; 
+    background-image: url(assets/Props/Tree_05.png);
+    background-position: center;
+}
+.water {
+    display: flex; 
+    flex: auto;
+    background-image: url(assets/Props/Rock_01.png);
+    background-position: center;
+}
+.board .row {
+    display: flex;
+    flex: auto;
+}
+.cells {
+    display: flex; 
+    flex: auto;
+    border-color: black;
+    background-image: url(assets/Tiles/Ground_Tile_02_B.png);
+}
+.game-settings {
+    display: flex;
+    justify-content: center;
+}
+.endGame {
+    display: none;
+    justify-content: center;
+    padding: 20px;
+}
+.newGame {
+    padding: 10px;
+    margin-right: 5px;
+}
+.console {
+    display: none;
+}
